@@ -18,5 +18,9 @@
  {
    "repository": "vendor_nxp-nfc_opensource_Nfc",
    "target_path": "vendor/nxp-nfc/opensource/Nfc"
+ },
+ {
+   "repository": "vendor_oneplus_oneplus3",
+   "target_path": "vendor/oneplus/oneplus3"
  }
 ]
