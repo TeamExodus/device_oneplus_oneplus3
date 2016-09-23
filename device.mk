@@ -96,10 +96,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Alipay
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
+# Alipay / WeChat
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
@@ -159,6 +156,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/FOSSConfig.xml:system/etc/FOSSConfig.xml
+
+# Display calibration
+PRODUCT_PACKAGES += \
+    libjni_livedisplay
 
 # Doze mode
 PRODUCT_PACKAGES += \
