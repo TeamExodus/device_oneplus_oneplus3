@@ -30,6 +30,11 @@ TARGET_BOOTLOADER_BOARD_NAME := msm8996
 TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno530
 
+# Audio/media/display
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -190,7 +195,7 @@ TARGET_LDPRELOAD := libNimsWrap.so
 BOARD_USES_QCNE := true
 
 # selinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/Android.mk
 
 BOARD_SEPOLICY_DIRS += $(BOARD_PATH)/sepolicy
 
