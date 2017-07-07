@@ -1,7 +1,7 @@
 ifeq ($(TARGET_HW_DISK_ENCRYPTION),true)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
-
+IGNORE_QCOM_CRYPTFS_HW := true
 LOCAL_PROPRIETARY_MODULE := true
 
 sourceFiles := \
