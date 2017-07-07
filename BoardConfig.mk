@@ -136,6 +136,9 @@ AUDIO_FEATURE_ENABLED_PLAYBACK_ULL := false
 USE_CAMERA_STUB := true
 TARGET_USES_MEDIA_EXTENSIONS := true
 
+# Gestures
+TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
+
 # Disable secure discard because it's SLOW
 BOARD_SUPPRESS_SECURE_ERASE := true
 
